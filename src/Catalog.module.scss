@@ -1,0 +1,40 @@
+// 2 пункт переменные и амперсанды
+$color-link: aqua;
+$color-hover-link: chocolate;
+$border-radius: 10px;
+$font-size: 18px;
+$margin-left: -40px;
+
+.apiList {
+    display: flex;
+    list-style-type: none;
+    font-size: $font-size;
+    margin-left: $margin-left;
+
+    li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div {
+        margin-bottom: 20px;
+    }
+    
+    &But {
+        color: $color-link;
+        border: 1px solid;
+        padding: 5px;
+        border-radius: $border-radius;
+        text-decoration: none;
+
+        &:hover {
+            background-color: $color-hover-link;
+        }
+    }
+    &Img {
+    width: 100px;
+    height: 100px;
+}
+}
+

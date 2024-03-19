@@ -1,0 +1,23 @@
+// 2 пункт переменные и амперсанды
+$color-link: gold;
+$gap: 10px;
+
+.Menu {
+    display: flex;
+    gap: $gap;
+    padding: 0;
+    margin-left: 0;
+
+    &-item {
+        list-style-type: none;
+    }
+
+    &-link {
+        color:$color-link;
+        text-decoration: none;
+
+        &[class~=active] {
+            text-decoration: underline;
+        }
+    }
+}
